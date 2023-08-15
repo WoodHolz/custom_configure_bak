@@ -1,2 +1,3 @@
 # my_nvim_configure
-copy
+
+To restore the backup configuration, copy this configuration file to ~/.config/nvim.
