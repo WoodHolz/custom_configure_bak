@@ -53,6 +53,7 @@ local plugins = {
   },
 
   {
+    -- if it's not working when `:MarkdownPreview`, use ":call mkdp#util#install() "
     "iamcco/markdown-preview.nvim",
     ft = "markdown",
   },
