@@ -1,4 +1,4 @@
-# my_nvim_configure
+# Custom_nvim_configure
 
 To restore the backup configuration, copy this configuration file to ~/.config/nvim.
 
@@ -24,4 +24,29 @@ if the `iamcco/markdown-preview.nvim`  not working when
 use cmd
 ``` vim
 :call mkdp#util#install()
+```
+
+### Disable `toggle_themeBtn`
+
+> ~/.local/share/nvim/lazy/ui/lua/nvchad/tabufline/modules.lua
+
+Comment out the `TbToggle_theme` function and the local variable `toggle_themeBtn` like this
+
+``` lua
+---------------------------------------------------------- btn onclick functions -------------------------------------------------
+...
+-- disable toggle_themeBtn
+-- vim.cmd "function! TbToggle_theme(a,b,c,d) \n lua require('base46').toggle_theme() \n endfunction"
+...
+
+---------------------------------------------------------- components ------------------------------------------------------------
+...
+M.buttons = function()
+  -- disable toggle_themeBtn
+  -- local toggle_themeBtn = "%@TbToggle_theme@%#TbLineThemeToggleBtn#" .. vim.g.toggle_theme_icon .. "%X"
+  local CloseAllBufsBtn = "%@TbCloseAllBufs@%#TbLineCloseAllBufsBtn#" .. " 󰅖 " .. "%X"
+  -- return toggle_themeBtn .. CloseAllBufsBtn
+  return CloseAllBufsBtn
+end
+...
 ```
