@@ -1,0 +1,3 @@
+echo "resetnvim"
+rm ~/.config/nvim -rf \  rm -rf ~/.local/share/nvim
+echo "complete reset neovim"

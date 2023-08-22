@@ -1,5 +1,7 @@
 # Custom_nvim_configure
 
+Based on nvchad.
+
 To restore the backup configuration, copy this configuration file to ~/.config/nvim.
 
 ## Custom-added small features/attributes:
