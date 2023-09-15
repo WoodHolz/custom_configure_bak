@@ -4,6 +4,20 @@ Based on nvchad.
 
 To restore the backup configuration, copy this configuration file to ~/.config/nvim.
 
+## set relative lines number
+
+1. use the following cmd to enable the shell script
+
+``` shell
+sudo chmod +x ./setrn.sh
+```
+
+2. use the following cmd to run the shell script
+
+``` shell
+sh ./setrn.sh
+```
+
 ## Custom-added small features/attributes:
 
 * my_auto_save
