@@ -1,10 +1,24 @@
+# Custom_vim_config
+
+## Install vim plugin manager
+
+``` shell
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+```
+
+## Copy the vim config
+
+``` shell
+sudo cat vimrc.bak >> ~/.vimrc
+```
+
 # Custom_nvim_configure
 
 Based on nvchad.
 
 To restore the backup configuration, copy this configuration file to ~/.config/nvim.
 
-## set relative lines number
+## Set relative lines number
 
 1. use the following cmd to enable the shell script
 

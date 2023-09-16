@@ -1,0 +1,37 @@
+set number " 显示行号
+set relativenumber " 显示相对的行号
+set cursorline " 光标所在行划线高亮
+" set cursorcolumn " 高亮当前列
+
+set autoindent " 同步缩进
+set tabstop=4 " 设置缩进距离为4
+set expandtab " 设置将`tab`缩进替换为空格
+set softtabstop=4 " 替换为4个空格
+
+set wrap " 自动折行
+syntax on " 语法高亮
+set encoding=utf-8 " 设置显示字符
+
+
+"" plugin config
+
+call plug#begin('~/.vim/plugged')
+    Plug 'junegunn/fzf.vim' " 查找器
+    Plug 'rust-lang/rust.vim' " rust语法高亮
+    Plug 'wakatime/vim-wakatime' " wakatime记录编程时间
+    Plug 'scrooloose/nerdtree' " 文件目录树
+    Plug 'mhinz/vim-startify' " 浏览最近打开的文件, 终端输入`vim`时启用
+    Plug 'tpope/vim-fugitive' " git工具
+    Plug 'lfv89/vim-interestingwords' " 高亮光标处单词在文件的所有位置 
+call plug#end()
+
+"" vim-interestingwords config
+let g:interestingWordsGUIColors = ['#8CCBEA', '#A4E57E', '#FFDB72', '#FF7272', '#FFB3FF', '#9999FF']
+let g:interestingWordsTermColors = ['154', '121', '211', '137', '214', '222']
+let g:interestingWordsRandomiseColors = 1
+
+"" NerdTree config
+"autocmd vimenter * NERDTree  "自动开启Nerdtree
+"let g:NERDTreeWinSize = 25 "设定 NERDTree 视窗大小
+"开启/关闭nerdtree快捷键
+map <C-n> :NERDTreeToggle<CR>
