@@ -8,10 +8,31 @@ set tabstop=4 " 设置缩进距离为4
 set expandtab " 设置将`tab`缩进替换为空格
 set softtabstop=4 " 替换为4个空格
 
-set wrap " 自动折行
+"set wrap " 自动折行
 syntax on " 语法高亮
 set encoding=utf-8 " 设置显示字符
 
+" 使用Tab键补全时,在状态栏显示匹配的列表,
+" 方便查看都有哪些命令符合补全条件.
+set wildmenu
+
+" 共享剪贴板  
+set clipboard=unnamed
+
+" 代码补全
+set completeopt=preview,menu
+set completeopt=longest,menu
+
+" 自动保存
+set autowrite
+
+" 设置当文件被改动时自动载入
+set autoread
+set showmatch " 高亮显示匹配的括号
+
+"设置ruler会在右下角显示光标所在的行号和列号,
+" 不方便查看.改成设置状态栏显示内容
+set ruler
 
 "" plugin config
 
