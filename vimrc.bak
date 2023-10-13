@@ -44,7 +44,13 @@ call plug#begin('~/.vim/plugged')
     Plug 'mhinz/vim-startify' " 浏览最近打开的文件, 终端输入`vim`时启用
     Plug 'tpope/vim-fugitive' " git工具
     Plug 'lfv89/vim-interestingwords' " 高亮光标处单词在文件的所有位置 
+    Plug 'rafi/awesome-vim-colorschemes' " theme
+    Plug 'endel/vim-github-colorscheme' " theme:github
 call plug#end()
+
+colorscheme one
+" set background=dark " for the dark version
+set background=light " for the light version
 
 "" vim-interestingwords config
 let g:interestingWordsGUIColors = ['#8CCBEA', '#A4E57E', '#FFDB72', '#FF7272', '#FFB3FF', '#9999FF']
