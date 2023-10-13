@@ -64,3 +64,8 @@ let g:interestingWordsRandomiseColors = 1
 "let g:NERDTreeWinSize = 25 "设定 NERDTree 视窗大小
 "开启/关闭nerdtree快捷键
 map <C-n> :NERDTreeToggle<CR>
+
+" 支持在Visual模式下，通过C-y复制到系统剪切板
+vnoremap <C-y> "+y
+" 支持在normal模式下，通过C-p粘贴系统剪切板
+nnoremap <C-p> "*p
