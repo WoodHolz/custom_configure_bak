@@ -46,8 +46,10 @@ call plug#begin('~/.vim/plugged')
     Plug 'lfv89/vim-interestingwords' " 高亮光标处单词在文件的所有位置 
     Plug 'rafi/awesome-vim-colorschemes' " theme
     Plug 'endel/vim-github-colorscheme' " theme:github
+    Plug 'vim-scripts/DrawIt' " vim draw 
 call plug#end()
 
+" set theme
 colorscheme one
 " set background=dark " for the dark version
 set background=light " for the light version
