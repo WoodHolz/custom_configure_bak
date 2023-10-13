@@ -9,7 +9,7 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.c
 ## Copy the vim config
 
 ``` shell
-sudo cat vimrc.bak >> ~/.vimrc
+sudo cat vimrc.bak > ~/.vimrc
 ```
 
 # Custom_nvim_configure
